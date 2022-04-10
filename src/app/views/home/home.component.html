@@ -1,0 +1,12 @@
+<ng-container *ngIf="data$ | async as data">
+  {{data | json}}
+</ng-container>
+
+<hr>
+
+<ng-container *ngIf="status$ | async as status">
+  {{status | json}}
+</ng-container>
+
+
+<button (click)="getData()">getData</button>
